@@ -1,0 +1,1 @@
+This is the countdown to the end of the training.

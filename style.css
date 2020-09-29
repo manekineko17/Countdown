@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@800&display=swap');
+
+@media (max-width: 576px) { 
+  body{
+    max-width: 100%;
+  } 
+}
+
+@media (max-width: 768px) { 
+   body{
+    max-width: 750px;
+   }
+}
+
+@media (max-width: 992px) {
+   body{
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 1200px) {
+   body{
+    max-width: 800px;
+  }s
+}
+
+html{
+	background-image: url("media/fond_mobile.png");
+	background-repeat: repeat;
+    background-size: auto;
+}
+
+header{
+	display: flex;
+	width:100%;
+	padding:20px;
+	position: absolute;
+	top: 8%;
+	left: 55%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+header > h1{
+	color: #FFFFFF;
+	font-size: 17px;
+	font-weight: normal;
+	font-family: 'Poppins', sans-serif;
+	display: flex;
+	width:100%;
+	padding:auto;
+	position: relative;
+	top: 8%;
+	left: 75%;
+	transform: translateX(-35%) translateY(-50%);
+}
+
+/*logo du header*/
+header > .logo {
+	height: 33px;
+	top: 6%;
+	transform: translateX(1500%) translateY(-15%);
+	
+
+}
+
+/*préparez vous*/
+body > h1 {
+	text-align: center;
+	font-weight: normal;
+	color: #FFFFFF;
+	font-size: 24px;
+	font-family: 'Montserrat', sans-serif;
+	top: 25%;
+	position: absolute;
+	top: 15%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	text-align: center;
+}
+
+/*préparez vous*/
+em {
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+	font-style: normal;
+}
+
+
+#countDown{
+	color: #FFFFFF;
+	font-size: 20px;
+	font-family: 'Poppins', sans-serif;
+	position: absolute;
+	width: 177px;
+	height: 76px;
+	left: 42%;
+	top: 25%;
+	text-align: center;
+	background-color: #5495e0;
+	border: 1px solid #5495e0;
+	border-radius: 5px;
+	padding: 10px;
+	margin: auto;
+}
+
+.numbers{
+	transform: translateX(-50%) translateY(50%);
+}
+
+/*avant le passage*/
+.avant_titre{
+	color: #FFFFFF;
+	font-size: 24px;
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+	margin: auto;
+	position: absolute;
+	width:97%;
+	top: 45%;
+}
+
+.rappel{
+	border: 1px solid #FFFFFF;
+	border-color: #FFFFFF;
+	border-radius: 6px;
+	color: #FFFFFF;
+	text-align: center;
+	width:87%;
+	padding:20px;
+	margin: auto;
+	display: flex;
+	position: absolute;
+	top: 70%;
+	
+}
+
+.rappel > p{
+	font-size: 12px;	   
+	font-family: 'Poppins', sans-serif;
+	margin: auto;
+}
+
+.bell{
+	width: 22px;
+	height: 22px;
+	transform: translateX(-1500%) translateY(10%);
+	display: flex;
+	padding:auto;
+	position: relative;
+
+}
+
+
+footer{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: auto;
+	position:absolute;
+	bottom:0;
+	width:100%;
+	padding-top:50px;
+	height:50px;
+}
+
+/*gauche du footer*/
+.gauche > p{
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 10px;
+	font-family: 'Poppins', sans-serif;
+}
+/*gauche du footer*/
+.gauche > a{
+	color: #000000;
+	text-align: center;
+	font-size: 6px;
+	font-style: italic;
+	font-family: 'Poppins', sans-serif;
+}
+
+/*droite du footer*/
+.droite{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+
+/*droite du footer*/
+.droite > p{
+	color: #FFFFFF;
+	font-size: 10px;
+	font-family: 'Poppins', sans-serif;
+	
+}
+/*droite du footer*/
+.logo_github{
+	width: 22px;
+	height: 22px;
+	display: flex;
+	padding:auto;
+	position: relative;
+	transform: translateX(30%) translateY(30%);
+
+}
+
+/*icon alert copyright*/
+.copyright{
+	position:relative;
+	bottom:0;
+	width:100%;
+	padding-top:50px;
+	height:50px;
+}
+
+/* unvisited link */
+a:link {
+  color: #000000;
+}
+
+/* visited link */
+a:visited {
+  color: #000000;
+}
