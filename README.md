@@ -1,1 +1,2 @@
-This is the countdown to the end of the training.
+# countdown
+Countdown to the end of the web development training
