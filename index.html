@@ -2,7 +2,7 @@
 <html>
 	<head>
 	    <meta charset="utf-8" />
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	    <link rel="stylesheet" href="style.css" />
 		<script src="style.js" defer></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -13,41 +13,53 @@
 	<body>
 
 		<header>
-			<img class="logo" src="media/Logo_countdownTiphaine.png">
+			<div class="logo">
+				<img src="media/Logo_countdownTiphaine.png">
+			</div>
 
-			<h1>Countdown app</h1>
+			<div class="titre_appli">
+				<h1>Countdown app</h1>
+			</div>
 		</header>
 
-		<h1>Préparez <em>vous...</em></h1>
 
-		<table id="countDown">
-			<tr> 
-				<td colspan="4"></td>
-			</tr> 
-			<tr> 
-				<td id="days"></td>
-				<td id="hours"></td>
-				<td id="minutes"></td>
-				<td id="seconds"></td>
-			</tr>
-		</table>
+		<div class="compteur">
+			<h1>Préparez <em>vous...</em></h1>
+
+			<table id="countDown">
+				<tr> 
+					<td colspan="4"></td>
+				</tr> 
+				<tr class="numbers"> 
+					<td id="days"></td>
+					<td id="hours"></td>
+					<td id="minutes"></td>
+					<td id="seconds"></td>
+				</tr>
+			</table>
+		</div>
 
 
+		<div class="avant_titre">
+			<p >Avant le passage du titre professionnel développeuse web /web mobile !</p>
+			
+			<div class="rappel">
+				<p>Cliquez ici pour ajouter un rappel dans votre agenda</p>
 
-		<p class="avant_titre">Avant le passage du titre professionnel développeuse web /web mobile !</p>
-		
-		<div class="rappel">
-			<p>Cliquez ici pour ajouter un rappel dans votre agenda</p>
-
-			<a href="https://lh3.googleusercontent.com/rMnTII1uQerO-RK9gZzHqWnuv5biKtccGG1N49xSrgaRJtckLeTO17CyqkSf4Sxghw=h900" target="_blank"><img class="bell" src="media/bell.png" title="alert bell"></a>
+				<a href="https://lh3.googleusercontent.com/rMnTII1uQerO-RK9gZzHqWnuv5biKtccGG1N49xSrgaRJtckLeTO17CyqkSf4Sxghw=h900" target="_blank"><img class="bell" src="media/bell.png" title="alert bell"></a>
+			</div>
 		</div>
 
 	</body>
 
+
+
 	<footer>
 		
 		<div class="gauche">
-			<p>Application créée par<br>Tiphaine Le Priol<br><a href="https://www.flaticon.com/authors/freepik" target="_blank" title="Freepik">Icone from Freepik</a>
+			<p>Application créée par<br>Tiphaine Le Priol<br>
+
+			<a class="copyright" href="https://www.flaticon.com/authors/freepik" target="_blank" title="Freepik">Icone from Freepik</a>
 			</p>
 		</div>
 		

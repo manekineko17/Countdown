@@ -32,6 +32,10 @@ $(function countDown(){
 })
 console.log("Jquery est prêt");
 
+//si taille écran change => changement fond
+
+//insérer des cercles en css pour faire les : 
+
 
 
 
