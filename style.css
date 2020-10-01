@@ -159,7 +159,7 @@ table{
 #bell{
 	width: 22px;
 	height: 22px;
-	vertical-align: middle;
+	vertical-align: -10px;
 }
 
 /*4ème box*/
@@ -168,8 +168,10 @@ footer{
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
+	align-items: center;
 	align-content: center;
-	width: 95%;
+	width: 90%;
+	height: 10%;
 }
 
 /*gauche du footer*/
@@ -181,11 +183,18 @@ footer{
 	flex:1;
 }
 
+#marine{
+	color: #5495e0;
+	font-size: 10px;
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+}
+
 /*droite du footer*/
 #droite{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: center;
 	flex:2;
 }
 
@@ -193,19 +202,14 @@ footer{
 	color: #FFFFFF;
 	font-size: 10px;
 	font-family: 'Poppins', sans-serif;
+	text-align: center;
 }
 
 #github{
 	width: 22px;
 	height: 22px;
-	vertical-align: -12px;
-	flex:3;
+	vertical-align: 25px;
 }
 
-a{
-	color: #5495e0;
-	font-size: 10px;
-	font-family: 'Poppins', sans-serif;
-}
 
 
