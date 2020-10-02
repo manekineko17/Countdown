@@ -203,16 +203,21 @@ footer{
 		background-repeat: no-repeat;
 	}
 	header{
+		align-items: center;
 		justify-content: flex-start;
-	}
-	#compteur > h1 {
-		font-size: 30px;
+		width: 90%;
+		height: 8%;
 	}
 	/*2ème box : préparez vous*/
 	#compteur{
-		align-items: flex-end;
-		width: 80%;
+		justify-content: space-around;
+		align-items: center;
+		align-content: flex-end;
+		width: 70%;
 		height: 40%;
+	}
+	#compteur > h1 {
+		font-size: 45px;
 	}
 	/*3ème box : avant le passage*/
 	#avant_titre{
