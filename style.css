@@ -200,7 +200,7 @@ footer{
 	}
 	html{
 	   	background-image: url("media/fond_tablette.png");
-		background-repeat: no-repeat;
+		height: 100%;
 	}
 	header{
 		align-items: center;
@@ -221,15 +221,36 @@ footer{
 	}
 	/*3ème box : avant le passage*/
 	#avant_titre{
-		justify-content: space-between;
 		align-content: flex-end;
 		align-items: flex-end;
-		width: 85%;
+		width: 90%;
 		height: 25%;
+		font-size: 18px;
 	}
-
-
-
+	#avant_titre > p{
+		width: 70%;
+	}
+	#rappel{
+		width: 50%;
+	}
+	footer{
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-items: center;
+		align-content: flex-start;
+		width: 50%;
+	}
+	#gauche{
+		display: flex;
+		flex-wrap: wrap-reverse;
+		justify-content: flex-end;
+		align-content: flex-end;
+		align-items: center;
+	}
+	#droite{
+		justify-content: flex-end;
+	}
 }
 
 
@@ -238,15 +259,76 @@ footer{
 
 /*desktop: on screens that are 1094px or more, set the followings */
 @media screen and (min-width: 1094px)  { 
-	   body{
+	body{
 	  }
 
-	  html{
+	html{
 	   	background-image: url("media/fond_desktop.png");
 		background-repeat: no-repeat;
 	    background-size: 100%;
 	    margin: 0;
 		}
+
+	header{
+		align-items: center;
+		justify-content: flex-start;
+		width: 90%;
+		height: 15%;
+		font-size: 15px;
+	}
+	/*2ème box : préparez vous*/
+	#compteur{
+		justify-content: space-around;
+		align-items: center;
+		align-content: flex-end;
+		width: 70%;
+		height: 40%;
+	}
+	table{
+		width: 25%;
+		height: 25%;
+	}
+	#compteur > h1 {
+		font-size: 50px;
+	}
+	/*3ème box : avant le passage*/
+	#avant_titre{
+		align-content: flex-end;
+		align-items: flex-start;
+		width: 90%;
+		height: 25%;
+		font-size: 22px;
+	}
+	#avant_titre > p{
+		width: 48%;
+	}
+	#rappel{
+		width: 30%;
+	}
+	footer{
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		align-items: flex-end;
+		align-content: center;
+		width: 50%;
+		height: 10%;
+	}
+	#gauche > p{
+		text-align: center;
+	}
+	#marine{
+		text-align: center;
+	}
+	#droite{
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	#github{
+		width: 30px;
+		height: 30px;
+	}
+}
 
 
 }
