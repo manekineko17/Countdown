@@ -132,23 +132,25 @@ table{
 
 /*4ème box*/
 footer{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	align-items: center;
-	align-content: center;
+	display: inline-block;
 	width: 90%;
-	height: 10%;
+	height: auto;
+}
+
+.block{
+	display: inline-block;
 }
 
 /*gauche du footer*/
+#gauche{
+	margin-left: 5%;
+}
+
 #gauche > p{
 	color: #FFFFFF;
 	font-size: 10px;
 	font-family: 'Poppins', sans-serif;
 	text-align: center;
-	flex:1;
 }
 
 #marine{
@@ -160,10 +162,8 @@ footer{
 
 /*droite du footer*/
 #droite{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	flex:2;
+	vertical-align: 20px;
+	margin-left: 15%;
 }
 
 #droite > p{
@@ -173,6 +173,7 @@ footer{
 }
 
 #github{
+	vertical-align: -10px;
 	width: 30px;
 	height: 30px;
 }
@@ -206,9 +207,11 @@ footer{
 		align-items: center;
 		justify-content: flex-start;
 		width: 90%;
-		height: 8%;
+		height: auto;
 	}
-	/*2ème box : préparez vous*/
+	#logo{
+		margin-right: 10%;
+	}
 	#compteur{
 		justify-content: space-around;
 		align-items: center;
@@ -219,7 +222,6 @@ footer{
 	#compteur > h1 {
 		font-size: 45px;
 	}
-	/*3ème box : avant le passage*/
 	#avant_titre{
 		align-content: flex-end;
 		align-items: flex-end;
@@ -233,42 +235,22 @@ footer{
 	#rappel{
 		width: 50%;
 	}
-	footer{
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: flex-start;
-		align-items: center;
-		align-content: flex-start;
-		width: 50%;
-	}
 	#gauche{
-		display: flex;
-		flex-wrap: wrap-reverse;
-		justify-content: flex-end;
-		align-content: flex-end;
-		align-items: center;
+		margin-left: 50%;
 	}
 	#droite{
-		justify-content: flex-end;
+		margin-left: 12%;
 	}
 }
 
 
 
 
-
 /*desktop: on screens that are 1094px or more, set the followings */
 @media screen and (min-width: 1094px)  { 
-	body{
-	  }
-
 	html{
 	   	background-image: url("media/fond_desktop.png");
-		background-repeat: no-repeat;
-	    background-size: 100%;
-	    margin: 0;
 		}
-
 	header{
 		align-items: center;
 		justify-content: flex-start;
@@ -276,7 +258,6 @@ footer{
 		height: 15%;
 		font-size: 15px;
 	}
-	/*2ème box : préparez vous*/
 	#compteur{
 		justify-content: space-around;
 		align-items: center;
@@ -291,46 +272,28 @@ footer{
 	#compteur > h1 {
 		font-size: 50px;
 	}
-	/*3ème box : avant le passage*/
 	#avant_titre{
 		align-content: flex-end;
 		align-items: flex-start;
 		width: 90%;
 		height: 25%;
-		font-size: 22px;
+		font-size: 24px;
 	}
 	#avant_titre > p{
 		width: 48%;
 	}
 	#rappel{
-		width: 30%;
+		width: 40%;
 	}
-	footer{
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: flex-end;
-		align-items: flex-end;
-		align-content: center;
-		width: 50%;
-		height: 10%;
+	#bell{
+		vertical-align: -4px;
 	}
-	#gauche > p{
-		text-align: center;
-	}
-	#marine{
-		text-align: center;
+	#gauche{
+		margin-left: 55%;
 	}
 	#droite{
-		flex-direction: row;
-		justify-content: space-around;
+		margin-left: 12%;
 	}
-	#github{
-		width: 30px;
-		height: 30px;
-	}
-}
-
-
 }
 
 
