@@ -2,30 +2,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@800&display=swap');
 
-@media screen and (max-width: 375px) { /*mobile*/
-	 html, body{
+/*mobile*/
+@media screen and (max-width: 375px) { 
+	html, body{
 	 	max-width: 375px;
 	    margin: 0;
-	  } 
+	} 
 }
 
-/*@media screen and (max-width: 767px) { /*tablette*/
-	   /*body{
-	    max-width: 979px;
-	    min-width: 768px
-	   }
-
-	   html{
+/*tablette*/
+@media screen and (max-width: 834px) { 
+	body{
+	    max-width: 834px;
+	    min-width: 375px;
+	    align-content: stretch;
+	}
+	html{
 	   	background-image: url("media/fond_tablette.png");
 		background-repeat: no-repeat;
-	    background-size: 100%;
-	    margin: 0;
-		}
-}*/
+	}
+	header{
+		justify-content: flex-start;
+	}
+	#compteur > h1 {
+		font-size: 30px;
+	}
+	/*2ème box : préparez vous*/
+	#compteur{
+		align-items: flex-end;
+		width: 80%;
+		height: 40%;
+	}
+	/*3ème box : avant le passage*/
+	#avant_titre{
+		justify-content: space-between;
+		align-content: flex-end;
+		align-items: flex-end;
+		width: 85%;
+		height: 25%;
+	}
 
-@media screen and (min-width: 1000) { /*desktop*/
-	   body{
-	    min-width: 1000px;
+
+
+}
+
+
+
+
+
+/*desktop*/
+/*@media screen and (min-width: 834) { 
+	   /*body{
+	    min-width: 834px;
 	  }
 
 	  html{
@@ -36,7 +64,7 @@
 		}
 
 
-}
+}*/
 
 
 
