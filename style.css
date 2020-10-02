@@ -2,74 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@800&display=swap');
 
-/*mobile*/
-@media screen and (max-width: 375px) { 
-	html, body{
-	 	max-width: 375px;
-	    margin: 0;
-	} 
-}
-
-/*tablette :on screens that are 992px or less, set the followings*/
-@media screen and (max-width: 834px) { 
-	body{
-	    max-width: 834px;
-	    min-width: 375px;
-	    align-content: stretch;
-	}
-	html{
-	   	background-image: url("media/fond_tablette.png");
-		background-repeat: no-repeat;
-	}
-	header{
-		justify-content: flex-start;
-	}
-	#compteur > h1 {
-		font-size: 30px;
-	}
-	/*2ème box : préparez vous*/
-	#compteur{
-		align-items: flex-end;
-		width: 80%;
-		height: 40%;
-	}
-	/*3ème box : avant le passage*/
-	#avant_titre{
-		justify-content: space-between;
-		align-content: flex-end;
-		align-items: flex-end;
-		width: 85%;
-		height: 25%;
-	}
-
-
-
-}
-
-
-
-
-
-/*desktop: on screens that are 834px or more, set the followings */
-@media screen and (min-width: 834) { 
-	   body{
-	    min-width: 834px;
-	  }
-
-	  html{
-	   	background-image: url("media/fond_desktop.png");
-		background-repeat: no-repeat;
-	    background-size: 100%;
-	    margin: 0;
-		}
-
-
-}
-
-
-
-
-/*********************************************/
 
 html{
 	background-image: url("media/fond_mobile.png");
@@ -245,5 +177,73 @@ footer{
 	height: 30px;
 }
 
+
+
+/**********************************************/
+
+
+
+/*mobile :on screens that are 834px or less*/
+@media screen and (max-width: 375px) { 
+	html, body{
+	 	max-width: 375px;
+	    margin: 0;
+	} 
+}
+
+/*tablette :on screens that are 834px or more, set the followings*/
+@media screen and (max-width: 1094px) and (min-width: 834px)  { 
+	body{
+	    max-width: 834px;
+	    min-width: 375px;
+	    align-content: stretch;
+	}
+	html{
+	   	background-image: url("media/fond_tablette.png");
+		background-repeat: no-repeat;
+	}
+	header{
+		justify-content: flex-start;
+	}
+	#compteur > h1 {
+		font-size: 30px;
+	}
+	/*2ème box : préparez vous*/
+	#compteur{
+		align-items: flex-end;
+		width: 80%;
+		height: 40%;
+	}
+	/*3ème box : avant le passage*/
+	#avant_titre{
+		justify-content: space-between;
+		align-content: flex-end;
+		align-items: flex-end;
+		width: 85%;
+		height: 25%;
+	}
+
+
+
+}
+
+
+
+
+
+/*desktop: on screens that are 1094px or more, set the followings */
+@media screen and (min-width: 1094px)  { 
+	   body{
+	  }
+
+	  html{
+	   	background-image: url("media/fond_desktop.png");
+		background-repeat: no-repeat;
+	    background-size: 100%;
+	    margin: 0;
+		}
+
+
+}
 
 
