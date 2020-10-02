@@ -184,21 +184,12 @@ footer{
 
 
 
-/*mobile :on screens that are 834px or less*/
+/*mobile :on screens that are 375px or less*/
 @media screen and (max-width: 375px) { 
-	html, body{
-	 	max-width: 375px;
-	    margin: 0;
-	} 
 }
 
-/*tablette :on screens that are 834px or more, set the followings*/
-@media screen and (max-width: 1094px) and (min-width: 834px)  { 
-	body{
-	    max-width: 834px;
-	    min-width: 375px;
-	    align-content: stretch;
-	}
+/*tablette :on screens that are min 376px, set the followings*/
+@media screen and (max-width: 1094px) and (min-width: 834px) { 
 	html{
 	   	background-image: url("media/fond_tablette.png");
 		height: 100%;
@@ -236,7 +227,7 @@ footer{
 		width: 50%;
 	}
 	#gauche{
-		margin-left: 50%;
+		margin-left: 40%;
 	}
 	#droite{
 		margin-left: 12%;
@@ -247,7 +238,7 @@ footer{
 
 
 /*desktop: on screens that are 1094px or more, set the followings */
-@media screen and (min-width: 1094px)  { 
+@media screen and (min-width: 1094px) { 
 	html{
 	   	background-image: url("media/fond_desktop.png");
 		}
@@ -289,10 +280,10 @@ footer{
 		vertical-align: -4px;
 	}
 	#gauche{
-		margin-left: 65%;
+		margin-left: 40%;
 	}
 	#droite{
-		margin-left: 20%;
+		margin-left: 30%;
 	}
 }
 
