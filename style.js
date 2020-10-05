@@ -24,7 +24,7 @@ $(function countDown(){
 	m %= 60;
 	s %= 60;
 
-	//append 0 with these values
+	//rajoute un 0 devant le chiffre si < 10
 	/*écriture complète : 
 	* if (h < 10){
 	*   h="0"+h
