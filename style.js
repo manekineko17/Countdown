@@ -1,14 +1,9 @@
-//sources : https://www.youtube.com/watch?v=NJVJRFF-Y6U
 $(function countDown(){
 	var now = new Date();
-	var eventDate = new Date(2021, 2, 23);
-	//0=janvier, 1 = février, 2 = mars
-
+	var eventDate = new Date(2021, 2, 23); //0=janvier, 1 = février, 2 = mars
 	var currentTime = now.getTime();
 	var eventTime = eventDate.getTime();
-
-	var remTime = eventTime - currentTime;
-	//remTime = remaining time
+	var remTime = eventTime - currentTime; //remTime = remaining time
 
 	//conversion de millisecondes en secondes
 	//Math.floor : arrondi le nombre entier inférieur ou égal à la valeur passée en argument
@@ -23,7 +18,6 @@ $(function countDown(){
 	h %= 24;
 	m %= 60;
 	s %= 60;
-
 	//rajoute un 0 devant le chiffre si < 10
 	/*écriture complète : 
 	* if (h < 10){
@@ -33,17 +27,17 @@ $(function countDown(){
 	m = (m < 10) ? "0" + m : m;
 	s = (s < 10) ? "0" + s : s;
 
-	document.getElementById("days").textContent = d;
-	//textContent non supporté sur IE
+	document.getElementById("days").textContent = d; //textContent non supporté sur IE
 	document.getElementById("days").innerText = d;
-
 	document.getElementById("hours").textContent = h;
 	document.getElementById("minutes").textContent = m;
 	document.getElementById("seconds").textContent = s;
 
-	//appelle la fonction après 1 s
-	//la fonction sera exécutée 1 seule fois
+	//appelle la fonction après 1 s. la fonction sera exécutée 1 seule fois
 	setTimeout(countDown, 1000);
 })
 console.log("Jquery est prêt");
 
+
+
+//sources : https://www.youtube.com/watch?v=NJVJRFF-Y6U
